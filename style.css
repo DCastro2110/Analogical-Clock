@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff
+}
+html {
+    height: 100vh;
+}
+body {
+    background-color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.watch {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+}
+.risks {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 290px;
+    height: 290px;
+    position: absolute;
+}
+
+.risks .risk {
+    position: absolute;
+    height: 145px;
+    transform-origin: bottom;;
+}
+.num1 {transform: rotate(30deg);}
+.num2 {transform: rotate(60deg);}
+.num3 {transform: rotate(90deg);}
+.num4 {transform: rotate(120deg);}
+.num5 {transform: rotate(150deg);}
+.num6 {transform: rotate(180deg);}
+.num7 {transform: rotate(210deg);}
+.num8 {transform: rotate(240deg);}
+.num9 {transform: rotate(270deg);}
+.num10 {transform: rotate(300deg);}
+.num11 {transform: rotate(330deg);}
+
+.pointers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch-circle {
+    position: absolute;
+    z-index: 4;
+    align-self: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.seconds-pointer, .minutes-pointer, .hours-pointer {
+    transform-origin: bottom;
+    position: absolute;
+    height: 100px;
+    align-self: center;
+    transform: translate(0, -50%);
+    border-radius: 40%;
+}
+.seconds-pointer {
+    width: 3px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+}
+.minutes-pointer {
+    height: 105px;
+    width: 5px;
+    background-color: #fff;
+    z-index: 1;
+}
+.hours-pointer {
+    height: 80px;
+    width: 5px;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.digital-hour {
+    font-size: 40px;
+}
+
